@@ -48,7 +48,7 @@ def welcome_letters():
 
 
 ################################
-# BEGGINING OF THE MAIN SCRIPT #
+# BEGINING OF THE MAIN SCRIPT #
 ################################
 if __name__ == "__main__":
 
