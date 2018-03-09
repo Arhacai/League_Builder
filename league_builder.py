@@ -49,7 +49,7 @@ def welcome_letters():
 
             file.write("Dear {}:\n\n".format(player[2]))
             file.write("Welcome to the {} team!\n\n".format(name))
-            file.write("Please don't forget to bring {} to the soccer court at 17:00 on February 20th.\n\nBest regards.""".format(player[0]))
+            file.write("Please don't forget to bring {} to the soccer court at 20:00 on March 20th.\n\nBest regards.""".format(player[0]))
             file.close()
 
 
