@@ -2,10 +2,10 @@ import csv
 import random
 
 
-# Imports a list of players from a cvs file.
+# Imports a list of players from a csv file.
 def import_players():
-    with open('soccer_players.csv', newline='') as csvfile:
-        filereader = csv.reader(csvfile, delimiter=',')
+    with open("soccer_players.csv", newline="") as csvfile:
+        filereader = csv.reader(csvfile, delimiter=",")
         rows = list(filereader)
         for row in rows:
             # Deletes 'Height' because is not shown on the final exported txt.
@@ -45,7 +45,7 @@ def export_teams_to_txt():
 def welcome_letters():
     for name, players in teams.items():
         for player in players:
-            file = open("{}.txt".format("_".join(player[0].split()).lower()), "w")
+            file = open("players/{}.txt".format("_".join(player[0].split()).lower()), "w")
 
             file.write("Dear {}:\n\n".format(player[2]))
             file.write("Welcome to the {} team!\n\n".format(name))
